@@ -43,7 +43,7 @@ jobs:
           node-version: "24.21.0"
       # v6.1.0 is the first release that installs pnpm 12. Each TypeScript service also pins it in
       # its own packageManager field, which pnpm honours inside that directory.
-      - uses: pnpm/action-setup@v6.1.0
+      - uses: pnpm/action-setup@v6.1.1
         with:
           version: "12.4.1"
       # Each service installs from its own lockfile and is tested alone, as it will be deployed.

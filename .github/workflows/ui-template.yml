@@ -29,7 +29,7 @@ jobs:
       # It reads the pinned packageManager from there, keeping one source of truth.
       # v6.1.0 is the first release that installs pnpm 12, and the floating v6 tag still
       # points behind it, so the exact release is pinned.
-      - uses: pnpm/action-setup@v6.1.0
+      - uses: pnpm/action-setup@v6.1.1
         with:
           package_json_file: ui-template/control-plane/package.json
       - uses: actions/setup-node@v7
